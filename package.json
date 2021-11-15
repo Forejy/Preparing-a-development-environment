@@ -1,8 +1,13 @@
 {
+  "scripts" : {
+    "development": "nodemon",
+    "build": "webpack --config webpack.config.client.production.js && webpack --mode-production --config webpack.config.server.js",
+    "start": "NODE_ENV=production node ./dist/server.generated.js"
+  },
   "name": "preparing-the-development-environment",
   "version": "1.0.0",
   "description": "Un projet pour prendre le temps de préparer un environnement pour le developpement",
-  "main": "/server/server.js",
+  "main": "./server/server.js",
   "author": "Forejy",
   "license": "MIT",
   "dependencies": {

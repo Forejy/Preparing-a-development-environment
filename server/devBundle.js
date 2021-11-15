@@ -1,7 +1,7 @@
-import webpack from 'webpack'
-import webpackMiddleware from 'webpack-dev-middleware'
-import webpackHotMiddleware from 'webpack-hot-middleware'
-import webpackConfig from './../webpack.config.client'
+const webpack = require ('webpack')
+const webpackMiddleware = require ('webpack-dev-middleware')
+const webpackHotMiddleware = require ('webpack-hot-middleware')
+const webpackConfig = require ('./../webpack.config.client')
 
 const compile = (app) => {
 	if (process.env.NODE_ENV == 'development') {
@@ -12,6 +12,6 @@ const compile = (app) => {
 	}
 }
 
-export default {
+module.exports =  {
 	compile
 }

@@ -1,4 +1,4 @@
-export default () => {
+module.exports = () => {
 	return `<!doctype html>
 <html lang="en">
 	<head>
